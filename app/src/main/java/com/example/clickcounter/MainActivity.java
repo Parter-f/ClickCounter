@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 szamlalo.setText(Integer.toString(szam));
                 if(szam > 0){
                     szamlalo.setTextColor(Color.GREEN);
+
                 }
                 else if (szam < 0){
                     szamlalo.setTextColor(Color.rgb(255 , 0 ,0));
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 else{
                     szamlalo.setTextColor(Color.BLUE);
                 }
+
 
             }
         });
@@ -62,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     szamlalo.setTextColor(Color.BLUE);
+
                 }
 
             }
@@ -82,8 +86,11 @@ public class MainActivity extends AppCompatActivity {
                 szamlalo.setText(Integer.toString(szam));
                 szamlalo.setTextColor(Color.BLUE);
                 return false;
+
             }
         });
+
+
 
 
 

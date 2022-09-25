@@ -4,18 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
 
     <Button
         android:id="@+id/pluszgomb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:layout_centerVertical="true"
         android:text="+"
         android:layout_centerHorizontal="true"
-
-
+        android:layout_above="@id/szamlalo"
+        
     />
+    <TextView
+        android:id="@+id/szamlalo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#0000FF"
+
+
+        />
+    <Button
+        android:id="@+id/minusgomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="-"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/szamlalo"
+
+        />
+    
+
 
 </RelativeLayout>
